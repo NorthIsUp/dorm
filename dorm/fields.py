@@ -9,8 +9,7 @@ class BaseField(object):
 
     type = None
 
-    def __init__(self, required=False, default=None, pk=False, **kwargs):
-        self.required = required
+    def __init__(self, default=None, pk=False, **kwargs):
         self.default = default
         self.name = None
         self.object = None
